@@ -1,0 +1,24 @@
+{
+  "name": "web-dev-coursera",
+  "version": "1.0.0",
+  "description": "This is a test directory to learn Node",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-takaoka/web-dev-coursera.git"
+  },
+  "author": "Felipe Takaoka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe-takaoka/web-dev-coursera/issues"
+  },
+  "homepage": "https://github.com/felipe-takaoka/web-dev-coursera#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
