@@ -28,3 +28,16 @@
 	margin: 0px;
 	color: #0f0f0f;
 }
+
+.navbar a {
+    color: white;
+}
+
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
+}
+
+.navbar-dark {
+	background-color: #512DA8;
+}
