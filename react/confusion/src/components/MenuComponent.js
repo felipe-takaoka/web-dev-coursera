@@ -6,6 +6,7 @@ class Menu extends Component {
     super(props);
 
     this.state = {
+      idxSelected: 0,
       dishes: [
         {
           id: 0,
@@ -41,12 +42,29 @@ class Menu extends Component {
           description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'                        }
        ],
     }
+
+    this.handleSelectNext = this.handleSelectNext.bind(this);
+    this.handleSelectPrev = this.handleSelectPrev.bind(this);
+  }
+
+  addToIdx(idx, val, len) {
+    let newVal = (idx + val) % len;
+    return (newVal >= 0) ? newVal : len + newVal;
+  }
+
+  handleSelectPrev() {
+    this.setState((state) => ({idxSelected: this.addToIdx(state.idxSelected, -1, state.dishes.length)}))
+  }
+
+  handleSelectNext() {
+    this.setState((state) => ({idxSelected: this.addToIdx(state.idxSelected, +1, state.dishes.length)}))
   }
   
   render() {
-    const menu = this.state.dishes.map(dish => {
+    const menu = this.state.dishes.map((dish, idx) => {
+      const divStyle = 'col-12 mt-5' + ( (idx === this.state.idxSelected) ? ' border border-primary' : '')
       return (
-        <div key={dish.id} className='col-12 mt-5'>
+        <div key={dish.id} className={divStyle}>
           <Media tag='li'>
             <Media left middle>
               <Media object src={dish.image} alt={dish.name} />
@@ -62,6 +80,28 @@ class Menu extends Component {
 
     return (
       <div className='container'>
+        <div className='row mt-5'>
+          <div className='col'>
+            <button 
+              onClick={this.handleSelectPrev}
+              type='button'
+              className='btn btn-primary btn-block'>
+                &lt;
+            </button>
+          </div>
+          <div className='col text-center'>
+            <h2>{this.state.idxSelected}</h2>
+          </div>
+          <div className='col'>
+            <button 
+              onClick={this.handleSelectNext}
+              type='button'
+              className='btn btn-primary btn-block'>
+                &gt;
+            </button>
+          </div>
+          
+        </div>
         <div className='row'>
           <Media list>
             {menu}
