@@ -37,6 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.3.0"],\
             ["@testing-library/user-event", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.5.0"],\
             ["bootstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.0.0"],\
+            ["bootstrap-social", "npm:5.1.1"],\
+            ["font-awesome", "npm:4.7.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
@@ -5955,6 +5957,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["bootstrap", [\
+        ["npm:3.4.1", {\
+          "packageLocation": "./.yarn/cache/bootstrap-npm-3.4.1-c63015f4c4-5742035e8c.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "npm:3.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/bootstrap-npm-4.0.0-761e1b6baf-d1dafa8529.zip/node_modules/bootstrap/",\
           "packageDependencies": [\
@@ -5976,6 +5985,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/popper.js",\
             "jquery",\
             "popper.js"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["bootstrap-social", [\
+        ["npm:5.1.1", {\
+          "packageLocation": "./.yarn/cache/bootstrap-social-npm-5.1.1-a114671125-9b4e2ef3f8.zip/node_modules/bootstrap-social/",\
+          "packageDependencies": [\
+            ["bootstrap-social", "npm:5.1.1"],\
+            ["bootstrap", "npm:3.4.1"],\
+            ["font-awesome", "npm:4.7.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6551,6 +6571,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.3.0"],\
             ["@testing-library/user-event", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.5.0"],\
             ["bootstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.0.0"],\
+            ["bootstrap-social", "npm:5.1.1"],\
+            ["font-awesome", "npm:4.7.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
@@ -8734,6 +8756,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/debug",\
             "debug"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["font-awesome", [\
+        ["npm:4.7.0", {\
+          "packageLocation": "./.yarn/cache/font-awesome-npm-4.7.0-7a553c5fbb-fa223f6e3b.zip/node_modules/font-awesome/",\
+          "packageDependencies": [\
+            ["font-awesome", "npm:4.7.0"]\
           ],\
           "linkType": "HARD"\
         }]\
