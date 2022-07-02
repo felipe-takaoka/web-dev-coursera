@@ -42,9 +42,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
+            ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
             ["react-router-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.2.2"],\
             ["react-scripts", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.1"],\
             ["reactstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.0"],\
+            ["redux", "npm:3.7.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -6577,9 +6579,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
+            ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
             ["react-router-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.2.2"],\
             ["react-scripts", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.1"],\
             ["reactstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.0"],\
+            ["redux", "npm:3.7.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -11146,6 +11150,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash-es", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.21-b45832dfce-05cbffad6e.zip/node_modules/lodash-es/",\
+          "packageDependencies": [\
+            ["lodash-es", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.debounce", [\
         ["npm:4.0.8", {\
           "packageLocation": "./.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-a3f527d22c.zip/node_modules/lodash.debounce/",\
@@ -14412,6 +14425,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-redux", [\
+        ["npm:5.0.7", {\
+          "packageLocation": "./.yarn/cache/react-redux-npm-5.0.7-da02bb08b7-7dbbf7e0d8.zip/node_modules/react-redux/",\
+          "packageDependencies": [\
+            ["react-redux", "npm:5.0.7"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7", {\
+          "packageLocation": "./.yarn/__virtual__/react-redux-virtual-091c8675e7/0/cache/react-redux-npm-5.0.7-da02bb08b7-7dbbf7e0d8.zip/node_modules/react-redux/",\
+          "packageDependencies": [\
+            ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
+            ["@types/react", null],\
+            ["@types/redux", null],\
+            ["hoist-non-react-statics", "npm:2.5.5"],\
+            ["invariant", "npm:2.2.4"],\
+            ["lodash", "npm:4.17.21"],\
+            ["lodash-es", "npm:4.17.21"],\
+            ["loose-envify", "npm:1.4.0"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["redux", "npm:3.7.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "@types/redux",\
+            "react",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-refresh", [\
         ["npm:0.11.0", {\
           "packageLocation": "./.yarn/cache/react-refresh-npm-0.11.0-c0a4e59e76-112178a05b.zip/node_modules/react-refresh/",\
@@ -14678,6 +14723,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redent", "npm:3.0.0"],\
             ["indent-string", "npm:4.0.0"],\
             ["strip-indent", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux", [\
+        ["npm:3.7.2", {\
+          "packageLocation": "./.yarn/cache/redux-npm-3.7.2-0f79fccafa-c349b77e68.zip/node_modules/redux/",\
+          "packageDependencies": [\
+            ["redux", "npm:3.7.2"],\
+            ["lodash", "npm:4.17.21"],\
+            ["lodash-es", "npm:4.17.21"],\
+            ["loose-envify", "npm:1.4.0"],\
+            ["symbol-observable", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15919,6 +15977,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csso", "npm:4.2.0"],\
             ["picocolors", "npm:1.0.0"],\
             ["stable", "npm:0.1.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["symbol-observable", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/symbol-observable-npm-1.2.0-9e812a0a39-48ffbc22e3.zip/node_modules/symbol-observable/",\
+          "packageDependencies": [\
+            ["symbol-observable", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
