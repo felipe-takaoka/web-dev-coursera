@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
             ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
+            ["react-redux-form", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:1.16.8"],\
             ["react-router-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.2.2"],\
             ["react-scripts", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.1"],\
             ["reactstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.0"],\
@@ -6580,6 +6581,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
             ["react-popper", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:0.9.2"],\
             ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
+            ["react-redux-form", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:1.16.8"],\
             ["react-router-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.2.2"],\
             ["react-scripts", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.1"],\
             ["reactstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.0"],\
@@ -9545,6 +9547,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["icepick", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/icepick-npm-1.3.0-c7a9f01c35-c8ca257b62.zip/node_modules/icepick/",\
+          "packageDependencies": [\
+            ["icepick", "npm:1.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["iconv-lite", [\
         ["npm:0.4.24", {\
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-bd9f120f5a.zip/node_modules/iconv-lite/",\
@@ -11168,6 +11179,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.get", [\
+        ["npm:4.4.2", {\
+          "packageLocation": "./.yarn/cache/lodash.get-npm-4.4.2-7bda64ed87-e403047ddb.zip/node_modules/lodash.get/",\
+          "packageDependencies": [\
+            ["lodash.get", "npm:4.4.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.isfunction", [\
         ["npm:3.0.9", {\
           "packageLocation": "./.yarn/cache/lodash.isfunction-npm-3.0.9-72aaa7f66c-99e54c34b1.zip/node_modules/lodash.isfunction/",\
@@ -11218,6 +11238,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash.tonumber-npm-4.0.3-395d68e95f-d8156cf76e.zip/node_modules/lodash.tonumber/",\
           "packageDependencies": [\
             ["lodash.tonumber", "npm:4.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.topath", [\
+        ["npm:4.5.2", {\
+          "packageLocation": "./.yarn/cache/lodash.topath-npm-4.5.2-d5c9ec2440-04583e220f.zip/node_modules/lodash.topath/",\
+          "packageDependencies": [\
+            ["lodash.topath", "npm:4.5.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14371,6 +14400,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-native-segmented-control-tab", [\
+        ["npm:3.4.1", {\
+          "packageLocation": "./.yarn/cache/react-native-segmented-control-tab-npm-3.4.1-166a068030-e671dacf1f.zip/node_modules/react-native-segmented-control-tab/",\
+          "packageDependencies": [\
+            ["react-native-segmented-control-tab", "npm:3.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-popper", [\
         ["npm:0.8.3", {\
           "packageLocation": "./.yarn/cache/react-popper-npm-0.8.3-1c14d0a932-5ebd9fc51f.zip/node_modules/react-popper/",\
@@ -14451,6 +14489,47 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/react",\
             "@types/redux",\
+            "react",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-redux-form", [\
+        ["npm:1.16.8", {\
+          "packageLocation": "./.yarn/cache/react-redux-form-npm-1.16.8-09cb793fe6-0d20d03599.zip/node_modules/react-redux-form/",\
+          "packageDependencies": [\
+            ["react-redux-form", "npm:1.16.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:1.16.8", {\
+          "packageLocation": "./.yarn/__virtual__/react-redux-form-virtual-9220bc97aa/0/cache/react-redux-form-npm-1.16.8-09cb793fe6-0d20d03599.zip/node_modules/react-redux-form/",\
+          "packageDependencies": [\
+            ["react-redux-form", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:1.16.8"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["@types/react-redux", null],\
+            ["@types/redux", null],\
+            ["icepick", "npm:1.3.0"],\
+            ["invariant", "npm:2.2.4"],\
+            ["lodash.get", "npm:4.4.2"],\
+            ["lodash.topath", "npm:4.5.2"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
+            ["react-native-segmented-control-tab", "npm:3.4.1"],\
+            ["react-redux", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:5.0.7"],\
+            ["redux", "npm:3.7.2"],\
+            ["shallow-compare", "npm:1.2.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react-redux",\
+            "@types/react",\
+            "@types/redux",\
+            "react-dom",\
+            "react-redux",\
             "react",\
             "redux"\
           ],\
@@ -15349,6 +15428,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/setprototypeof-npm-1.2.0-0fedbdcd3a-be18cbbf70.zip/node_modules/setprototypeof/",\
           "packageDependencies": [\
             ["setprototypeof", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["shallow-compare", [\
+        ["npm:1.2.2", {\
+          "packageLocation": "./.yarn/cache/shallow-compare-npm-1.2.2-b37b3d06d5-900b9fd693.zip/node_modules/shallow-compare/",\
+          "packageDependencies": [\
+            ["shallow-compare", "npm:1.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
