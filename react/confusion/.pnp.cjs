@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.5.0"],\
             ["bootstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.0.0"],\
             ["bootstrap-social", "npm:5.1.1"],\
+            ["cross-fetch", "npm:2.1.0"],\
             ["font-awesome", "npm:4.7.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
@@ -6578,6 +6579,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:13.5.0"],\
             ["bootstrap", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:4.0.0"],\
             ["bootstrap-social", "npm:5.1.1"],\
+            ["cross-fetch", "npm:2.1.0"],\
             ["font-awesome", "npm:4.7.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c4315363f29ca4f103a163e75a45175e2dd6fed3e4af8bf4d12ad5a1f936e3bbcbf2c75ecf32c5a11b7363855fe215dd4587e3f407e92687e141d6864097e1ff#npm:18.2.0"],\
@@ -6720,6 +6722,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parse-json", "npm:5.2.0"],\
             ["path-type", "npm:4.0.0"],\
             ["yaml", "npm:1.10.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cross-fetch", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/cross-fetch-npm-2.1.0-4d1ae4343e-a92d297acf.zip/node_modules/cross-fetch/",\
+          "packageDependencies": [\
+            ["cross-fetch", "npm:2.1.0"],\
+            ["node-fetch", "npm:2.1.1"],\
+            ["whatwg-fetch", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11737,6 +11750,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["no-case", "npm:3.0.4"],\
             ["lower-case", "npm:2.0.2"],\
             ["tslib", "npm:2.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["node-fetch", [\
+        ["npm:2.1.1", {\
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.1.1-9113276020-0981798199.zip/node_modules/node-fetch/",\
+          "packageDependencies": [\
+            ["node-fetch", "npm:2.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17081,6 +17103,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["whatwg-fetch", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/whatwg-fetch-npm-2.0.3-d66f21a388-b2b1c94900.zip/node_modules/whatwg-fetch/",\
+          "packageDependencies": [\
+            ["whatwg-fetch", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.6.2", {\
           "packageLocation": "./.yarn/cache/whatwg-fetch-npm-3.6.2-4bdf324792-ee976b7249.zip/node_modules/whatwg-fetch/",\
           "packageDependencies": [\

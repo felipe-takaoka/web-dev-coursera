@@ -4404,6 +4404,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     bootstrap: 4.0.0
     bootstrap-social: 5.1.1
+    cross-fetch: 2.1.0
     font-awesome: 4.7.0
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -4527,6 +4528,16 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.10.0
   checksum: 4be63e7117955fd88333d7460e4c466a90f556df6ef34efd59034d2463484e339666c41f02b523d574a797ec61f4a91918c5b89a316db2ea2f834e0d2d09465b
+  languageName: node
+  linkType: hard
+
+"cross-fetch@npm:2.1.0":
+  version: 2.1.0
+  resolution: "cross-fetch@npm:2.1.0"
+  dependencies:
+    node-fetch: 2.1.1
+    whatwg-fetch: 2.0.3
+  checksum: a92d297acfde83c2a40ddb2e14045e1834ae055dcd4ef86e794cf90c8fdcd0f8cfaf7d1e975afcc2baa3ab4cf5015342e9c7b80c050ddbb32088cb3a072f1cc1
   languageName: node
   linkType: hard
 
@@ -8708,6 +8719,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-fetch@npm:2.1.1":
+  version: 2.1.1
+  resolution: "node-fetch@npm:2.1.1"
+  checksum: 0981798199ca90b7f82d11005a98ca14432b237cd6957e8e876e1ccb8a309eabb865f8970ba83e2a2190e389843d5fe84aff61221fcf68aa91f068af54415d43
+  languageName: node
+  linkType: hard
+
 "node-forge@npm:^1":
   version: 1.3.1
   resolution: "node-forge@npm:1.3.1"
@@ -12618,6 +12636,13 @@ __metadata:
   dependencies:
     iconv-lite: 0.4.24
   checksum: 5be4efe111dce29ddee3448d3915477fcc3b28f991d9cf1300b4e50d6d189010d47bca2f51140a844cf9b726e8f066f4aee72a04d687bfe4f2ee2767b2f5b1e6
+  languageName: node
+  linkType: hard
+
+"whatwg-fetch@npm:2.0.3":
+  version: 2.0.3
+  resolution: "whatwg-fetch@npm:2.0.3"
+  checksum: b2b1c94900e51afee17a5a6d05d8058f4dbb7d10868f0f016fff2dbf3a212098e01f8f4bc7d93c7c91b0a6c42f248a1d23c7bec869f2f8c7d6cec5bc4b704d07
   languageName: node
   linkType: hard
 
