@@ -5,6 +5,7 @@ import { React, Component } from 'react';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -90,13 +91,18 @@ class CommentForm extends Component {
 
 function RenderDish({dish}) {
   return (
-    <Card>
-      <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
-      <CardBody>
-        <CardTitle>{dish.name}</CardTitle>
-        <CardText>{dish.description}</CardText>
-      </CardBody>
-    </Card>
+    <FadeTransform in
+        transformProps={{
+          exitTransform: 'scale(0.5) translateY(-50%)'
+        }}>
+      <Card>
+        <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
+        <CardBody>
+          <CardTitle>{dish.name}</CardTitle>
+          <CardText>{dish.description}</CardText>
+        </CardBody>
+      </Card>
+    </FadeTransform>
   )
 }
 
@@ -106,24 +112,28 @@ function RenderComments({comments, postComment, dishId}) {
       <div>
         <h4>Comments</h4>
         <ul className='list-unstyled'>
-          {comments.map(comment => {
-            let id = comment.id;
-            let commentText = comment.comment;
-            let author = comment.author;
-            let options = { year: 'numeric', month: 'short', day: 'numeric' };
-            let formattedDate = new Date(comment.date).toLocaleDateString("en-US", options);
+          <Stagger in>
+            {comments.map(comment => {
+              let id = comment.id;
+              let commentText = comment.comment;
+              let author = comment.author;
+              let options = { year: 'numeric', month: 'short', day: 'numeric' };
+              let formattedDate = new Date(comment.date).toLocaleDateString("en-US", options);
 
-            return (
-              <div key={id}>
-                <li key={id}>
-                  <blockquote className="blockquote">
-                    <p className="mb-0">{commentText}</p>
-                    <footer className="blockquote-footer">{author}, {formattedDate}</footer>
-                  </blockquote>
-                </li>
-              </div>
-            )
-          })}
+              return (
+                <Fade in>
+                  <div key={id}>
+                    <li key={id}>
+                      <blockquote className="blockquote">
+                        <p className="mb-0">{commentText}</p>
+                        <footer className="blockquote-footer">{author}, {formattedDate}</footer>
+                      </blockquote>
+                    </li>
+                  </div>
+                </Fade>
+              )
+            })}
+          </Stagger>
         </ul>
         <CommentForm dishId={dishId} postComment={postComment} />
       </div>
