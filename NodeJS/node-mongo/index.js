@@ -26,7 +26,7 @@ MongoClient.connect(uri)
           "dishes"
         );
       })
-      .then(() => {
+      .then((result) => {
         console.log(`Updated Document\n${result.result}`);
         return dboper.findDocuments(db, "dishes");
       })
