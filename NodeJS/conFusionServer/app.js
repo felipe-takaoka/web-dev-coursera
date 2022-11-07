@@ -1,3 +1,4 @@
+require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -9,6 +10,20 @@ var usersRouter = require("./routes/users");
 var dishRouter = require("./routes/dishRouter");
 var leaderRouter = require("./routes/leaderRouter");
 var promoRouter = require("./routes/promoRouter");
+
+const mongoose = require("mongoose");
+const Dishes = require("./models/dishes");
+
+const uri = process.env.MONGO_URI;
+mongoose
+  .connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(
+    () => console.log("Connected to the server"),
+    (err) => console.log(err)
+  );
 
 var app = express();
 
