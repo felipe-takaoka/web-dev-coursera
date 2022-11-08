@@ -22,7 +22,7 @@ dishRouter
       )
       .catch((err) => next(err));
   })
-  .post((req, res) => {
+  .post((req, res, next) => {
     Dishes.create(req.body)
       .then(
         (dish) => {
@@ -39,7 +39,7 @@ dishRouter
     res.statusCode = 403;
     res.end("PUT operation not supported on /dishes");
   })
-  .delete((req, res) => {
+  .delete((req, res, next) => {
     Dishes.remove({})
       .then(
         (resp) => {
@@ -54,7 +54,7 @@ dishRouter
 
 dishRouter
   .route("/:dishId")
-  .get((req, res) => {
+  .get((req, res, next) => {
     Dishes.findById(req.params.dishId)
       .then(
         (dish) => {
@@ -70,7 +70,7 @@ dishRouter
     res.statusCode = 403;
     res.end(`POST operation not supported on /dishes/${req.params.dishId}`);
   })
-  .put((req, res) => {
+  .put((req, res, next) => {
     Dishes.findByIdAndUpdate(
       req.params.dishId,
       { $set: req.body },
@@ -86,7 +86,7 @@ dishRouter
       )
       .catch((err) => next(err));
   })
-  .delete((req, res) => {
+  .delete((req, res, next) => {
     Dishes.findByIdAndRemove(req.params.dishId)
       .then(
         (resp) => {
