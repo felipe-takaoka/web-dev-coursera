@@ -3,8 +3,6 @@ var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
 var logger = require("morgan");
-var session = require("express-session");
-var FileStore = require("session-file-store")(session);
 var passport = require("passport");
 
 var indexRouter = require("./routes/index");

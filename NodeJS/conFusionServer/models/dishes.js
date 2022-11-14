@@ -10,7 +10,7 @@ const commentSchema = new Schema(
       required: true,
     },
     comment: { type: String, required: true },
-    author: { type: String, required: true },
+    author: { type: mongoose.Types.ObjectId, ref: "User" },
   },
   { timestamps: true }
 );
