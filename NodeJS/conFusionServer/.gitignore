@@ -1,3 +1,6 @@
 .env
 db.json
 /sessions
+cert.csr
+certificate.pem
+private.key
