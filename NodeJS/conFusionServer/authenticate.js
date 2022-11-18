@@ -5,6 +5,7 @@ var User = require("./models/user");
 var JwtStrategy = require("passport-jwt").Strategy;
 var ExtractJwt = require("passport-jwt").ExtractJwt;
 var jwt = require("jsonwebtoken");
+var FacebookTokenStrategy = require("passport-facebook-token");
 
 exports.local = passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
@@ -41,4 +42,30 @@ exports.verifyAdmin = (req, _, next) => {
     err.status = 403;
     next(err);
   }
-}
+};
+
+exports.facebookPassport = passport.use(
+  new FacebookTokenStrategy(
+    {
+      clientID: process.env.FB_CLIENT_ID,
+      clientSecret: process.env.FB_CLIENT_SECRET,
+    },
+    (accessToken, refreshToken, profile, done) => {
+      User.findOne({ facebookId: profile.id }, (err, user) => {
+        if (err) {
+          return done(err, false);
+        } else if (!err && user !== null) {
+          return done(null, user);
+        }
+        const newUser = new User({ username: profile.displayName });
+        newUser.facebookId = profile.id;
+        newUser.firstname = profile.name.givenName;
+        newUser.lastname = profile.name.familyName;
+        newUser.save((err, user) => {
+          if (err) return done(err, false);
+          else return done(null, user);
+        });
+      });
+    }
+  )
+);
